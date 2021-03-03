@@ -1,3 +1,4 @@
+var repoNameEl = document.querySelector("#repo-name");
 var issueContainerEl = document.querySelector("#issues-container");
 var limitWarningEl = document.querySelector("#limitWarning");
 
@@ -35,7 +36,7 @@ var displayIssues = function(issues) {
     for (var i = 0; i < issues.length; i++) {
         // create a link element to take users tot he issue on github
         var issueEl = document.createElement("a");
-        issueEl.classList = "list-item flex row justify-space-between align-center";
+        issueEl.classList = "list-item flex-row justify-space-between align-center";
         issueEl.setAttribute("href", issues[i].html_url);
         issueEl.setAttribute("target", "_blank");
 
